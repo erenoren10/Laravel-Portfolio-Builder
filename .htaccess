@@ -1,0 +1,44 @@
+<IfModule mod_rewrite.c>
+# That was ONLY to protect you from 500 errors
+# if your server did not have mod_rewrite enabled
+
+RewriteEngine On
+# RewriteBase /
+# NOT needed unless you're using mod_alias to redirect
+
+RewriteCond %{REQUEST_URI} !/public
+RewriteRule ^(.*)$ public/$1 [L]
+# Direct all requests to /public folder
+
+</IfModule>
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php8_module>
+   php_flag display_errors On
+   php_value max_execution_time 240000
+   php_value max_input_time 240000
+   php_value max_input_vars 400000
+   php_value memory_limit 2048M
+   php_value post_max_size 2048M
+   php_value session.gc_maxlifetime 144000
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php82"
+   php_value upload_max_filesize 2048M
+   php_flag zlib.output_compression On
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors On
+   php_value max_execution_time 240000
+   php_value max_input_time 240000
+   php_value max_input_vars 400000
+   php_value memory_limit 2048M
+   php_value post_max_size 2048M
+   php_value session.gc_maxlifetime 144000
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php82"
+   php_value upload_max_filesize 2048M
+   php_flag zlib.output_compression On
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+#Header set Access-Control-Allow-Origin "*"
