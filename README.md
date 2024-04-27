@@ -64,3 +64,50 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Laravel Portfolio Builder
+
+Bu proje, Excel dosyasındaki bilgilere göre işletme portfölyösü oluşturan bir web uygulamasını içerir. 
+
+## Proje Açıklaması
+
+Laravel Portfolio Builder, Laravel framework'ü kullanılarak geliştirilmiş bir web uygulamasıdır. Bu uygulama, kullanıcıların bir Excel dosyasında bulunan bilgilere göre işletme portfölyösü oluşturmasına olanak tanır. Excel dosyasındaki veriler, Laravel'in güçlü yetenekleri ve veritabanı işlevleri kullanılarak işlenir ve web sitesinde gösterilir.
+
+## Özellikler
+
+- Excel dosyasından veri aktarımı
+- İşletme portfölyösü oluşturma
+- Verileri düzenleme ve güncelleme
+- Kullanıcı dostu arayüz
+
+## Kurulum
+
+Projenin yerel bir ortamda çalıştırılması için aşağıdaki adımları izleyin:
+
+1. Öncelikle, projeyi bilgisayarınıza klonlayın: `git clone https://github.com/erenoren10/Laravel-Portfolio-Builder.git`
+2. Proje dizinine gidin ve gerekli bağımlılıkları yüklemek için aşağıdaki komutu çalıştırın: `composer install`
+3. `.env` dosyasını oluşturun ve gerekli veritabanı ayarlarını yapın.
+4. Proje ana dizinindeyken migrationları çalıştırın: `php artisan migrate`
+5. Projeyi başlatmak için aşağıdaki komutu çalıştırın: `php artisan serve`
+6. Tarayıcınızda `http://localhost:8000` adresine giderek uygulamayı görüntüleyebilirsiniz.
+
+## Kullanım
+
+Uygulama başladığında, kullanıcılar Excel dosyasından veri aktarımı yapabilir ve işletme portfölyösü oluşturabilirler. Oluşturulan portfölyöler, kullanıcıların yönetim panelinden görüntülenebilir ve düzenlenebilir.
+
+## Katkıda Bulunma
+
+Eğer projeye katkıda bulunmak istiyorsanız, lütfen bir pull request gönderin veya bir issue açın. 
+
+## Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasını inceleyebilirsiniz.
+
+
+
+
+
+
+
+
+
